@@ -3,8 +3,6 @@ package com.shreyans.BugTracking.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 
@@ -16,12 +14,16 @@ public class IssueDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
+
+    @Column(length = 255)
     private String title;
-    @Column
+
+    @Column(name = "`description`", length = 2000)
     private String description;
-    @Column
+
+    @Column(name = "`type`", length = 50)
     private String type;
-    @Column
+
+    @Column(length = 50)
     private String priority;
 }
