@@ -16,12 +16,13 @@ import { IssueRaiseComponent } from './issue-raise/issue-raise.component';
 import { IssueRaisedListComponent } from './issue-raised-list/issue-raised-list.component';
 import { NotificationService } from 'app/services/notification.service';
 import { IssueDetailsService } from 'app/services/issue-details.service';
+import { DevloperProfileComponent } from './devloper-profile/devloper-profile.component';
 
 
 
 @NgModule({
   declarations: [
-    IssueRaiseComponent, IssueRaisedListComponent
+    IssueRaiseComponent, IssueRaisedListComponent, DevloperProfileComponent
   ],
   imports: [
     CommonModule,
